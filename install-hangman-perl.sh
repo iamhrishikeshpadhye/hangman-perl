@@ -55,8 +55,8 @@ fi
 
 if [[ ! -e /usr/lib/games/words ]]; then
     echo "[*] Wordlist not found, installing wordlist (/usr/lib/games/words)"
-    sudo mkdir -p /usr/lib/games/
-    sudo curl -o /usr/lib/games/words https://raw.githubusercontent.com/iamhrishikeshpadhye/hangman-perl/master/words/words
+    mkdir -p /usr/lib/games/
+    curl -o /usr/lib/games/words https://raw.githubusercontent.com/iamhrishikeshpadhye/hangman-perl/master/words/words
     echo "[+] Wordlist has be installed successfully (/usr/lib/games/words)"
 else
 	echo "[+] Wordlist already exists, skipping installation"
@@ -65,8 +65,8 @@ fi
 if [[ ! -e /usr/bin/hangman-perl ]]; then
 	echo "[*] Executable not detected in (/usr/bin/)"
 	curl -o hangman-perl.pl https://raw.githubusercontent.com/iamhrishikeshpadhye/hangman-perl/master/hangman-perl.pl
-	sudo chmod +x hangman-perl.pl
-	sudo mv hangman-perl.pl /usr/bin/hangman-perl
+	chmod +x hangman-perl.pl
+	mv hangman-perl.pl /usr/bin/hangman-perl
 	echo "[+] Executable has been installed successfully (/usr/bin/hangman-perl)"
 else
 	echo "[+] Executable already exists, skipping installation"
