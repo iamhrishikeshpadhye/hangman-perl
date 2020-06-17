@@ -44,6 +44,7 @@ echo "The following changes will be made to your system :"
 sleep .5
 echo "1. A file named 'words' (3.7 MB) will be downloaded in /usr/lib/games/"
 echo "2. The binary file for hangman-perl will be placed in /usr/bin/"
+echo "3. Perl module Data::Random::WordList will be installed and updated"
 sleep .5
 read -p "Do you want to continue?(y/n)" -n 1 -r
 echo    
@@ -71,6 +72,9 @@ else
 	echo "[+] Executable already exists, skipping installation"
 
 fi
+
+perl -MCPAN -e "install Data::Random::WordList"
+
 echo "..."
 sleep 2
 echo "[+] hangman-perl has been successfully installed"
