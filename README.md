@@ -6,7 +6,7 @@ Installation is extremely simple, make sure you have perl interpreter installed 
 <br>
 Copy and paste the following line in your terminal
 ```
-$ curl -o install-hangamn-perl.sh https://raw.githubusercontent.com/iamhrishikeshpadhye/hangman-perl/master/install-hangamn-perl.sh && sudo bash install-hangamn-perl.sh && rm install-hangamn-perl.sh
+$ curl -o install-hangman-perl.sh https://raw.githubusercontent.com/iamhrishikeshpadhye/hangman-perl/master/install-hangman-perl.sh && sudo bash install-hangman-perl.sh && rm install-hangman-perl.sh
 ```
 
 ### Author
