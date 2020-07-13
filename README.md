@@ -2,7 +2,7 @@
 Hangman game designed in Perl
 
 ## Installation
-### Installing on your system :
+### Installing on your Linux system :
 Installation is extremely simple, make sure you have perl interpreter installed in your system.<br>
 <br>
 Copy and paste the following line in your terminal
@@ -10,6 +10,7 @@ Copy and paste the following line in your terminal
 $ curl -o install-hangman-perl.sh https://raw.githubusercontent.com/iamhrishikeshpadhye/hangman-perl/master/install-hangman-perl.sh && sudo bash install-hangman-perl.sh && rm install-hangman-perl.sh
 ```
 ### Docker Installation :
+If you wish to run it in as a docker container follow this.<br>
 It will require active Internet connection for building the image.<br>
 ```
 $ docker build -t hangman-perl .
