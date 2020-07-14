@@ -19,6 +19,8 @@ Ensure that you have the `Dockerfile` in the directory where you are building th
 The `Dockerfile` is provided within this repository.<br>
 It will require active Internet connection for building the image.<br>
 ```
+$ git clone https://github.com/iamhrishikeshpadhye/hangman-perl.git
+$ cd hangman-perl
 $ docker build -t hangman-perl .
 $ docker run -it hangman-perl
 ```
