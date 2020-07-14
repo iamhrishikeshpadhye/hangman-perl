@@ -9,8 +9,14 @@ Copy and paste the following line in your terminal
 ```
 $ curl -o install-hangman-perl.sh https://raw.githubusercontent.com/iamhrishikeshpadhye/hangman-perl/master/install-hangman-perl.sh && sudo bash install-hangman-perl.sh && rm install-hangman-perl.sh
 ```
+Once the above command is successful, you can start the game in your terminal
+```
+$ hangman-perl
+```
 ### Docker Installation :
-If you wish to run it in as a docker container follow this.<br>
+If you wish to run it as a docker container follow this.<br>
+Ensure that you have the `Dockerfile` in the directory where you are building the container.<br>
+The `Dockerfile` is provided within this repository.<br>
 It will require active Internet connection for building the image.<br>
 ```
 $ docker build -t hangman-perl .
